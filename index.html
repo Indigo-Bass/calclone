@@ -3,111 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cal.com - Schedule your meetings</title>
-    
+    <title>Cal.com Clone | SUTT Task 1</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <span class="logo">Cal.com</span>
-            
-            <ul class="nav-links">
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Enterprise</a></li>
-                <li><a href="#">Cal.ai</a></li>
-                <li><a href="#">Developer</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Pricing</a></li>
-            </ul>
-
-            <div class="nav-actions">
-                <a href="#" class="sign-in">Sign in</a>
-                <button class="btn-primary">Get started ></button>
-            </div>
+    <header class="navbar">
+        <div class="nav-logo">
+            <a href="#"><strong>Cal.com</strong></a>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#">Solutions <span>v</span></a>
+            <a href="#">Enterprise</a>
+            <a href="#">Cal.ai</a>
+            <a href="#">Developer <span>v</span></a>
+            <a href="#">Resources <span>v</span></a>
+            <a href="#">Pricing</a>
         </nav>
+
+        <div class="nav-actions">
+            <a href="#" class="btn-signin">Sign in</a>
+            <a href="#" class="btn-primary">Get started &gt;</a>
+        </div>
     </header>
 
-    <main>
+    <main class="hero-section">
         
-        <section class="banner" aria-label="Compliance Information">
-            <p><span>ℹ</span> Scheduling software that checks every compliance box: SOC 2 Type II, HIPAA, GDPR, CCPA & more.</p>
-            <a href="#" class="learn-more">Learn more ></a>
-        </section>
-
-        <section class="hero">
+        <section class="hero-content">
+            <a href="#" class="launch-badge">Cal.com launches v6.3 &gt;</a>
             
-            <article class="hero-text">
-                <a href="#" class="launch-badge">Cal.com launches v6.3 ></a>
-                
-                <h1>The better way to<br>schedule your<br>meetings</h1>
-                <p class="subtitle">A fully customizable scheduling software for individuals, businesses taking calls and developers building scheduling platforms where users meet users.</p>
-
-                <div class="cta-group">
-                    <button class="btn-google">Sign up with Google</button>
-                    <button class="btn-email">Sign up with email ></button>
-                    <small class="no-credit">No credit card required</small>
+            <h1 class="hero-title">The better way to schedule your meetings</h1>
+            
+            <p class="hero-subtitle">
+                A fully customizable scheduling software for individuals, businesses taking calls and developers building scheduling platforms where users meet users.
+            </p>
+            
+            <div class="cta-group">
+                <button class="btn-google">
+                    <span class="icon-placeholder">G</span> Sign up with Google
+                </button>
+                <a href="#" class="btn-email">Sign up with email &gt;</a>
+            </div>
+            
+            <div class="trust-footer">
+                <span class="no-credit">No credit card required</span>
+                <div class="trustpilot-rating">
+                    <div class="stars">★★★★★</div>
+                    <span class="trustpilot-logo">★ Trustpilot</span>
                 </div>
-            </article>
-
-            <aside class="hero-mockup">
-                <div class="mockup-card">
-                    
-                    <div class="mockup-profile">
-                        <img src="assets/images/avatar.jpg" alt="Dr. Sarah Smith" class="avatar">
-                        
-                        <p class="doc-name">Dr. Sarah Smith</p>
-                        <h2>Medical Appointment</h2>
-                        <p class="doc-desc">Welcome to Sacred Hearth Hospital. Please pick a time for your appointment.</p>
-                        
-                        <div class="duration-pills">
-                            <button>15m</button>
-                            <button>30m</button>
-                            <button>45m</button>
-                            <button class="active">1h</button>
-                        </div>
-                        
-                        <address class="location-info">
-                            <p>📍 22 Street, Chicago</p>
-                            <p>🌐 Asia/Singapore ⌄</p>
-                        </address>
-                    </div>
-
-                    <div class="mockup-calendar">
-                        <div class="calendar-header">
-                            <strong>May</strong> 2025
-                        </div>
-                        
-                        <div class="calendar-grid">
-                            <span class="day-name">SUN</span>
-                            <span class="day-name">MON</span>
-                            <span class="day-name">TUE</span>
-                            <span class="day-name">WED</span>
-                            <span class="day-name">THU</span>
-
-                            <span></span><span></span><span></span>
-                            <span>1</span><span>2</span>
-                            <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
-                            <span>12</span><span>13</span><span>14</span><span>15</span><span>16</span>
-                            <span>19</span><span>20</span><span>21</span><span>22</span><span>23</span>
-                            <span>26</span><span class="active-date">27</span><span>28</span><span>29</span><span>30</span>
-                        </div>
-                    </div>
-
-                </div>
-            </aside>
-
+            </div>
         </section>
-    </main>
 
-    <footer>
-        <div class="trust-reviews">
-            <span>★★★★★ Trustpilot</span>
-            <span>★★★★★ P</span>
-            <span>★★★★★ G</span>
-        </div>
-    </footer>
+        <section class="hero-widget">
+            <div class="widget-card">
+                
+                <div class="widget-details">
+                    <div class="profile-header">
+                        <img src="assets\images\avatar.avif.avif" alt="Ethan Taylor" class="avatar">
+                        <div class="profile-info">
+                            <span class="name">Ethan Taylor</span>
+                            <span class="role">Academic Counseling</span>
+                        </div>
+                    </div>
+                    
+                    <p class="widget-desc">
+                        Virtual counseling session for university students to discuss academic progress and well-being.
+                    </p>
+                    
+                    <div class="duration-pills">
+                        <span class="icon">⏱</span>
+                        <span class="pill">15m</span>
+                        <span class="pill">30m</span>
+                        <span class="pill active">45m</span>
+                        <span class="pill">1h</span>
+                    </div>
+                    
+                    <div class="meeting-type">
+                        <span class="icon">📹</span> Google Meet
+                    </div>
+                    
+                    <div class="timezone">
+                        <span class="icon">🌐</span> America/California <span>v</span>
+                    </div>
+                </div>
+
+                <div class="widget-calendar">
+                    <div class="calendar-header">
+                        <strong>May</strong> 2025
+                    </div>
+                    
+                    <div class="calendar-grid">
+                        <div class="day-name">SUN</div>
+                        <div class="day-name">MON</div>
+                        <div class="day-name">TUE</div>
+                        <div class="day-name">WED</div>
+                        <div class="day-name">THU</div>
+                        <div class="day-name">FRI</div>
+                        <div class="day-name">SAT</div>
+
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        
+                        <div class="date">1</div>
+                        <div class="date">2</div>
+                        <div class="date">3</div>
+                        <div class="date">4</div>
+                        <div class="date">5</div>
+                        <div class="date has-events">6</div>
+                        <div class="date">7</div>
+                        <div class="date selected">8</div>
+                        <div class="date">9</div>
+                        <div class="date">10</div>
+                        <div class="date">11</div>
+                        <div class="date">12</div>
+                        <div class="date">13</div>
+                        <div class="date">14</div>
+                        <div class="date">15</div>
+                        <div class="date">16</div>
+                        <div class="date">17</div>
+                        <div class="date">18</div>
+                        <div class="date">19</div>
+                        <div class="date">20</div>
+                        <div class="date">21</div>
+                        <div class="date">22</div>
+                        <div class="date">23</div>
+                        <div class="date">24</div>
+                        <div class="date">25</div>
+                        <div class="date">26</div>
+                        <div class="date">27</div>
+                        <div class="date">28</div>
+                        <div class="date">29</div>
+                        <div class="date">30</div>
+                        <div class="date">31</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 </html>
